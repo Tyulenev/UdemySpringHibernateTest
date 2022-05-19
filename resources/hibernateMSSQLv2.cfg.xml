@@ -7,7 +7,7 @@
         <property name="connection.url">jdbc:microsoft:sqlserver://localhost:1433;
             databaseName = Test_AT_DB;
             user = bestuser;
-            password = Song123@35
+            password = Song123@35;
         </property>
         <property name="connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
 <!--        <property name="connection.username">bestuser</property>-->

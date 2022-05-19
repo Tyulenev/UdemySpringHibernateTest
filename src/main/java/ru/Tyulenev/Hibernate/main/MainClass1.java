@@ -12,17 +12,17 @@ public class MainClass1 {
                 .addAnnotatedClass(EmployeesEntity.class)
                 .buildSessionFactory();
 
-//        EmployeesEntity emp = new EmployeesEntity("Alexey", "Tyulenev", "IT", 500);
-//
-//        try {
-//            Session session_MS_SQL = factory.getCurrentSession();
-//            session_MS_SQL.beginTransaction();
-//            session_MS_SQL.save(emp);
-//            session_MS_SQL.getTransaction().commit(); //Подтверждение изменений
-//        }
-//        finally {
-//            factory.close();
-//        }
+        EmployeesEntity emp = new EmployeesEntity("Vova", "Telegov", "IT", 450);
+
+        try {
+            Session session_MS_SQL = factory.getCurrentSession();
+            session_MS_SQL.beginTransaction();
+            session_MS_SQL.save(emp);
+            session_MS_SQL.getTransaction().commit(); //Подтверждение изменений
+        }
+        finally {
+            factory.close();
+        }
         factory.close();
     }
 }
