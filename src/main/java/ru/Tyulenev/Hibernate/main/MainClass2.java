@@ -2,12 +2,10 @@ package ru.Tyulenev.Hibernate.main;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import org.hibernate.cfg.*;
+import org.hibernate.cfg.Configuration;
 import ru.Tyulenev.Hibernate.Entity.EmployeesEntity;
 
-//Добавление данных в таблицу
-
-public class MainClass1 {
+public class MainClass2 {
     public static void main(String[] args) {
         SessionFactory factory = new Configuration().
                 configure("hibernateMSSQL.cfg.xml")

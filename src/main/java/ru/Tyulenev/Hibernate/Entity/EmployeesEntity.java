@@ -3,11 +3,12 @@ package ru.Tyulenev.Hibernate.Entity;
 import javax.persistence.*;
 
 @Entity//Имя БД()
-@Table(name = "testTable_employees") //К какой таблице привязываем класс, можно не указывать
+@Table(name = "employees_test") //К какой таблице привязываем класс, можно не указывать
 public class EmployeesEntity {
 
+
     @Id
-//    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private int id;
 
