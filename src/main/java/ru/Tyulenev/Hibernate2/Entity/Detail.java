@@ -16,16 +16,17 @@ public class Detail {
     @Column(name = "phone_number")
     private String phoneNumber;
 
-
-
     @Column(name = "email")
     private String email;
+
+    @OneToOne(mappedBy = "empDetail",
+    cascade = CascadeType.ALL)
+    private EmployeesEntity employee;
 
     public Detail() {
     }
 
     public Detail(String city, String phoneNumber, String email) {
-        this.id = id;
         this.city = city;
         this.phoneNumber = phoneNumber;
         this.email = email;
@@ -61,6 +62,14 @@ public class Detail {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public EmployeesEntity getEmployee() {
+        return employee;
+    }
+
+    public void setEmployee(EmployeesEntity employee) {
+        this.employee = employee;
     }
 
     @Override
